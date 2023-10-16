@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply text-white bg-[#232323]
+}
+
+@layer {
+  .my-flex {
+    @apply flex justify-center items-center gap-2
+  }
+  .my-input {
+    @apply rounded-md py-2 px-4 text-black text-center bg-gray-100
+  }
+  .my-icon {
+    @apply hover:text-gray-400 cursor-pointer
+  }
+  .my-category {
+    @apply uppercase text-gray-400 text-sm
+  }
+  .my-button {
+    @apply bg-white py-2 w-[100%] text-black rounded-md
+  }
 }
