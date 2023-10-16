@@ -5,9 +5,9 @@ import Link from 'next/link'
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-const page = () => {
-	const { cart } = useSelector(state => state.products)
-
+const Page = () => {
+  const { cart } = useSelector(state => state.products)
+//22
 	if (!cart.length) {
 		return <h1 className='h-[500px] text-5xl my-flex uppercase'>Order is Empty</h1>
 	}
@@ -60,4 +60,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page

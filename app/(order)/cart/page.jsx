@@ -6,7 +6,7 @@ import { addToCart, removeFromCart } from '../../redux/slice/productsSlice.js'
 import { sumBy } from '../../utils/constants'
 import 'dotenv/config'
 
-const page = () => {
+const Page = () => {
 	const { cart } = useSelector(state => state.products)
 	const dispatch = useDispatch()
 
@@ -99,4 +99,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page
