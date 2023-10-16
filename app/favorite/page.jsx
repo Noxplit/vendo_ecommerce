@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeFromFavorite } from '../redux/slice/favorite/favoriteSlice.js'
 
-const page = () => {
+const Page = () => {
 	const { favorite } = useSelector(state => state.favorite)
 	const dispatch = useDispatch()
   console.log(favorite);
@@ -63,4 +63,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page
