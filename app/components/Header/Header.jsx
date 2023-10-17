@@ -26,7 +26,7 @@ const Header = async() => {
         <Search products={productsSearch}/>
         <CartIcon/>
         <FavoriteIcon/>
-				<Link href={'/login'}><MdOutlineAdminPanelSettings className='my-icon' size={25}  /></Link>
+				{/* <Link href={'/login'}><MdOutlineAdminPanelSettings className='my-icon' size={25}  /></Link> */}
 			</div>
 		</div>
 	)
